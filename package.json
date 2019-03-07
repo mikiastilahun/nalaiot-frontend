@@ -10,7 +10,9 @@
   "dependencies": {
     "vue": "^2.6.6",
     "vue-socket.io": "^3.0.5",
-    "vuetify": "^1.5.5"
+    "vuetify": "^1.5.5",
+    "@mdi/font": "^2.8.94",
+    "material-design-icons-iconfont": "^3.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",

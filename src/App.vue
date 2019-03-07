@@ -1,20 +1,27 @@
-<template>
+<template  lang="html">
   <div id="app">
-    <img alt="Vue logo" :width="value*20" :height="value*20" src="./assets/logo.png">
-    <h1>{{value}} cm</h1>
-    <h1> this is a text </h1>
-    <div id="green">
-       <button v-on:click="changeGreen">Switch</button>
-    </div>
+    <img src="https://cdn.dribbble.com/users/2284868/screenshots/5033094/maui_sticker.png" :width="value*30" :height="value*20">
+    <br>
+    <v-btn large fab color="green"
+        v-on:click="changeGreen">
+      <v-icon color="white" v-if="greenState">brightness_1</v-icon>
+      <v-icon color="white" v-if="!greenState">wb_incandescent</v-icon>
+    </v-btn>
 
-    <div id="yellow">
-       <button v-on:click="changeYellow">Switch</button>
-    </div>
+    <v-btn  large fab color="yellow"  
+        v-on:click="changeYellow">
+      <v-icon color="white" v-if="yellowState">brightness_1</v-icon>
+      <v-icon color="white" v-if="!yellowState">wb_incandescent</v-icon>
+    </v-btn>
 
-    <div id="red">
-       <button v-on:click="changeRed">Switch</button>
-    </div>
-   
+    <v-btn  large fab color="red" 
+        v-on:click="changeRed">
+      <v-icon color="white" v-if="redState">brightness_1</v-icon>
+      <v-icon color="white" v-if="!redState">wb_incandescent</v-icon>
+    </v-btn>
+    <br>
+
+
   </div>
 </template>
 
@@ -70,7 +77,7 @@ export default {
   margin: 20
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
