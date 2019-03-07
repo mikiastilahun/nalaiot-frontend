@@ -26,8 +26,6 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "app",
   data: () => ({
@@ -36,9 +34,6 @@ export default {
     red: false,
     value: 0
   }),
-  components: {
-    HelloWorld
-  },
   methods: {
     up() {
       this.value++;
